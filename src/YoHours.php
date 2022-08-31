@@ -84,12 +84,13 @@ class YoHours extends InputWidget
      * ```
      * @see [[https://github.com/simialbi/jquery-yohours]]
      */
-    public $templates = [];
+    public array $templates = [];
 
     /**
      * {@inheritDoc}
+     * @throws \Exception
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
 
